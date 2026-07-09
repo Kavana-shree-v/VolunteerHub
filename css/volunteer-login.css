@@ -1,0 +1,280 @@
+/* ==========================================
+            RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#2E7D32,#1565C0);
+
+}
+
+/* ==========================================
+            MAIN CONTAINER
+========================================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+
+}
+
+/* ==========================================
+            LEFT PANEL
+========================================== */
+
+.left-panel{
+
+    background:linear-gradient(135deg,#2E7D32,#1565C0);
+
+    color:white;
+
+    padding:60px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.left-panel h1{
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+.left-panel p{
+
+    font-size:18px;
+
+    line-height:32px;
+
+    margin-bottom:35px;
+
+}
+
+.left-panel img{
+
+    width:100%;
+
+    border-radius:15px;
+
+}
+
+/* ==========================================
+            RIGHT PANEL
+========================================== */
+
+.right-panel{
+
+    padding:60px;
+
+}
+
+.right-panel h2{
+
+    text-align:center;
+
+    color:#1565C0;
+
+    font-size:36px;
+
+    margin-bottom:40px;
+
+}
+
+/* ==========================================
+            INPUTS
+========================================== */
+
+.input-box{
+
+    margin-bottom:25px;
+
+}
+
+.input-box label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+    color:#444;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    padding:15px;
+
+    border:2px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.input-box input:focus{
+
+    outline:none;
+
+    border-color:#2E7D32;
+
+}
+
+/* ==========================================
+            OPTIONS
+========================================== */
+
+.options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:30px;
+
+    font-size:14px;
+
+}
+
+.options a{
+
+    color:#1565C0;
+
+    text-decoration:none;
+
+}
+
+.options a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ==========================================
+            BUTTON
+========================================== */
+
+button{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#2E7D32;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+button:hover{
+
+    background:#1565C0;
+
+}
+
+/* ==========================================
+            REGISTER LINK
+========================================== */
+
+.register{
+
+    margin-top:30px;
+
+    text-align:center;
+
+}
+
+.register a{
+
+    color:#1565C0;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.register a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ==========================================
+            RESPONSIVE
+========================================== */
+
+@media(max-width:900px){
+
+.container{
+
+grid-template-columns:1fr;
+
+}
+
+.left-panel{
+
+display:none;
+
+}
+
+.right-panel{
+
+padding:40px;
+
+}
+
+}
