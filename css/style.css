@@ -489,15 +489,19 @@ nav a:hover::after{
 
 .event-container{
 
-    display:grid;
+    display:flex;
 
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    flex-wrap:wrap;
 
     gap:35px;
+
+    justify-content:flex-start;
 
 }
 
 .event-card{
+
+    width:350px;
 
     background:white;
 
@@ -867,4 +871,8 @@ footer hr{
 
     }
 
+}
+
+.event-content a{
+    text-decoration: none;
 }
