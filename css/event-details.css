@@ -1,0 +1,247 @@
+/* ==========================================
+            RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#F4F7FC;
+}
+
+/* ==========================================
+            HEADER
+========================================== */
+
+header{
+
+    background:linear-gradient(135deg,#2E7D32,#1565C0);
+
+    color:white;
+
+    padding:20px 8%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+header h1{
+
+    font-size:30px;
+
+}
+
+header a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+header a:hover{
+
+    color:#FFD54F;
+
+}
+
+/* ==========================================
+            EVENT INFORMATION
+========================================== */
+
+.event-info{
+
+    width:85%;
+
+    margin:40px auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:18px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.event-info h1{
+
+    color:#1565C0;
+
+    margin-bottom:20px;
+
+}
+
+.event-info p{
+
+    font-size:18px;
+
+    line-height:32px;
+
+    color:#555;
+
+    margin-bottom:15px;
+
+}
+
+/* ==========================================
+            TEAM SECTION
+========================================== */
+
+.teams{
+
+    width:85%;
+
+    margin:40px auto;
+
+}
+
+.teams h2{
+
+    color:#2E7D32;
+
+    margin-bottom:30px;
+
+    font-size:35px;
+
+}
+
+/* ==========================================
+            TEAM CARD
+========================================== */
+
+.team-card{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.team-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.team-card h3{
+
+    color:#1565C0;
+
+    margin-bottom:10px;
+
+}
+
+.team-card strong{
+
+    color:#2E7D32;
+
+}
+
+/* ==========================================
+            BUTTONS
+========================================== */
+
+.team-card button{
+
+    padding:14px 30px;
+
+    border:none;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.team-card button:not(:disabled){
+
+    background:#2E7D32;
+
+    color:white;
+
+}
+
+.team-card button:not(:disabled):hover{
+
+    background:#1565C0;
+
+}
+
+.team-card button:disabled{
+
+    background:#E53935;
+
+    color:white;
+
+    cursor:not-allowed;
+
+}
+
+/* ==========================================
+            RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+    .team-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:20px;
+
+    }
+
+    header{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        text-align:center;
+
+    }
+
+    .event-info,
+    .teams{
+
+        width:95%;
+
+    }
+
+}
